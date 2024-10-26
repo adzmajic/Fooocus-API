@@ -82,7 +82,7 @@ class AdvancedParams(BaseModel):
     inpaint_strength: float = Field(1.0, description="Inpaint Denoising Strength", ge=0.0, le=1.0)
     inpaint_respective_field: float = Field(1.0, description="Inpaint Respective Field", ge=0.0, le=1.0)
     inpaint_advanced_masking_checkbox: bool = Field(True, description="Upload Mask")
-    invert_mask_checkbox: bool = Field(False, description="Invert Mask")
+    invert_mask_checkbox: bool = Field(True, description="Invert Mask")
     inpaint_erode_or_dilate: int = Field(0, description="Mask Erode or Dilate", ge=-64, le=64)
     black_out_nsfw: bool = Field(False, description="Block out NSFW")
     vae_name: str = Field(default_vae, description="VAE name")
