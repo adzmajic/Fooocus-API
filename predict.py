@@ -254,7 +254,9 @@ class Predictor(BasePredictor):
                     cn_weight = flags.default_parameters[cn_type][1]
                 image_prompts.append((cn_img, cn_stop, cn_weight, cn_type))
 
-        advanced_params = None
+        advanced_params = {
+            'invert_mask_checkbox': True # Force invert mask
+        }
 
         params = ImageGenerationParams(
             prompt=prompt,
