@@ -6,6 +6,15 @@ from pydantic import (
     ValidationError
 )
 
+import sys
+import os
+
+script_path = os.path.dirname(os.path.realpath(__file__))
+module_path = os.path.join(script_path, "repositories/Fooocus")
+
+sys.path.append(script_path)
+sys.path.append(module_path)
+
 from modules.config import (
     default_sampler,
     default_scheduler,
