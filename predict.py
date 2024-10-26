@@ -276,6 +276,7 @@ class Predictor(BasePredictor):
             outpaint_selections=outpaint_selections_arr,
             inpaint_input_image=inpaint_input_image_dict,
             image_prompts=image_prompts,
+            enhance_ctrlnets = [],
             advanced_params=advanced_params,
             inpaint_additional_prompt=inpaint_additional_prompt,
             outpaint_distance_left=outpaint_distance_left,
