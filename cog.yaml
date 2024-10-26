@@ -6,9 +6,6 @@ build:
   gpu: true
   cuda: "12.1"
 
-  sources:
-  - repositories/Fooocus
-
   # a list of ubuntu apt packages to install
   system_packages:
     - "libgl1-mesa-glx"
