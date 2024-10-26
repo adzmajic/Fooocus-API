@@ -669,7 +669,7 @@ example_enhance_detection_prompts = [[x] for x in example_enhance_detection_prom
 
 default_invert_mask_checkbox = get_config_item_or_set_default(
     key='default_invert_mask_checkbox',
-    default_value=False,
+    default_value=True,
     validator=lambda x: isinstance(x, bool),
     expected_type=bool
 )
