@@ -1,10 +1,18 @@
 from typing import Dict, List, Tuple
 import numpy as np
 import copy
+import sys
+import os
 
 from fooocusapi.models.common.base import EnhanceCtrlNets
 from fooocusapi.models.common.requests import AdvancedParams
 from modules import config
+
+script_path = os.path.dirname(os.path.realpath(__file__))
+module_path = os.path.join(script_path, "repositories/Fooocus")
+
+sys.path.append(script_path)
+sys.path.append(module_path)
 
 
 class ImageGenerationParams:
